@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About Garrett O'Rourke | President, Commercial Development Group | Miami</title>
+<meta name="description" content="About Garrett O'Rourke, President of Commercial Development Group in Miami Beach, with a background in sales leadership, call centers and investing."/>
+<link rel="canonical" href="https://garrettorourke.netlify.app/about.html"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile"/>
+<meta property="og:title" content="About Garrett O'Rourke | President, Commercial Development Group | Miami"/>
+<meta property="og:description" content="About Garrett O'Rourke, President of Commercial Development Group in Miami Beach, with a background in sales leadership, call centers and investing."/>
+<meta property="og:image" content="https://garrettorourke.netlify.app/images/hero.jpg"/>
+<meta property="og:url" content="https://garrettorourke.netlify.app/about.html"/>
+<meta property="og:site_name" content="Garrett O'Rourke"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%2316213a%22/%3E%3Ctext x=%2250%22 y=%2266%22 font-size=%2248%22 text-anchor=%22middle%22 fill=%22%234da6d8%22 font-family=%22Georgia%22%3EGO%3C/text%3E%3C/svg%3E"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='Garret O rourke';
+  async function loadSBLinks(){
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-about'],soc);
+    render(['sml-news-about'],news);
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://garrettorourke.netlify.app/#person",
+      "name": "Garrett O'Rourke",
+      "alternateName": "Garrett ORourke",
+      "jobTitle": "President",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Commercial Development Group"
+      },
+      "url": "https://garrettorourke.netlify.app/",
+      "image": "https://garrettorourke.netlify.app/images/hero.jpg",
+      "description": "Garrett O'Rourke is a Miami Beach-based business executive, sales professional and investor serving as President of Commercial Development Group. His professional background includes sales leadership, business development, call-center ownership and operations, real estate investing and stock-market investing.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Miami Beach",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "knowsAbout": [
+        "Sales",
+        "Sales leadership",
+        "Business development",
+        "Call-center operations",
+        "Stock investing",
+        "Real estate investing"
+      ],
+      "sameAs": [
+        "https://www.threads.com/@garrettorourke01",
+        "https://www.youtube.com/@garrettorourke01",
+        "https://dribbble.com/garrettorourke01",
+        "https://www.instagram.com/garrettorourke01/",
+        "https://vimeo.com/garrettorourke01",
+        "https://www.pinterest.com/garrettorourke01/",
+        "https://www.quora.com/profile/Garrett-ORourke-3",
+        "https://www.reddit.com/user/garrettorourke01/",
+        "https://about.me/garrettorourke",
+        "https://www.behance.net/garrettorourke",
+        "https://soundcloud.com/garrettorourke01",
+        "https://github.com/garrettorourke01"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://garrettorourke.netlify.app/#website",
+      "url": "https://garrettorourke.netlify.app/",
+      "name": "Garrett O'Rourke",
+      "description": "Garrett O'Rourke is a Miami Beach-based business executive, sales professional and investor serving as President of Commercial Development Group. His professional background includes sales leadership, business development, call-center ownership and operations, real estate investing and stock-market investing.",
+      "publisher": {
+        "@id": "https://garrettorourke.netlify.app/#person"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://garrettorourke.netlify.app/about.html#webpage",
+      "url": "https://garrettorourke.netlify.app/about.html",
+      "name": "About Garrett O'Rourke | President, Commercial Development Group | Miami",
+      "isPartOf": {
+        "@id": "https://garrettorourke.netlify.app/#website"
+      },
+      "mainEntity": {
+        "@id": "https://garrettorourke.netlify.app/#person"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ══ NAV ═══════════════════════════════════════════════════════ -->
+<nav id="main-nav">
+  <a class="nav-logo" href="/">Garrett<span> O'Rourke</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══ PAGE HERO ═════════════════════════════════════════════════ -->
+<div class="pg-hero">
+  <p class="eyebrow" style="color:rgba(255,255,255,.55)">Learn More</p>
+  <h1>Garrett O'Rourke</h1>
+  <p class="pg-sub">Business executive, sales leader and private investor based in Miami Beach, Florida.</p>
+</div>
+
+<!-- ══ PROFILE CARD ══════════════════════════════════════════════ -->
+<div class="pc-wrap">
+  <div class="pc">
+    <div class="pc-ph"><img src="images/hero.jpg" alt="Garrett O'Rourke"/></div>
+    <div>
+      <div class="pc-nm">Garrett O'Rourke</div>
+      <div class="pc-rl">President, Commercial Development Group</div>
+      <div class="pc-lc">Miami Beach, Florida</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ABOUT SECTIONS + SIDEBAR ══════════════════════════════════ -->
+<div class="am-wrap">
+  <div class="am-inner">
+    <div>
+
+      <div class="csec">
+        <p class="cey">Today</p>
+        <h2>President of Commercial Development Group</h2>
+        <p>Garrett O'Rourke is a Miami Beach-based business executive, sales professional and private investor who serves as President of Commercial Development Group. In that role his work centers on business development, sales leadership, commercial strategy and identifying opportunities for growth.</p>
+        <p>His approach is practical rather than theoretical. Garrett's perspective comes from working directly with customers, sales teams, employees and business partners, and from the operational problems that come with them. A short summary of his background is also available on <a href="https://about.me/garrettorourke" target="_blank" rel="noopener">his about.me page</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Sales</p>
+        <h2>A Career Built on Sales Fundamentals</h2>
+        <p>O'Rourke attended the University of Cincinnati before beginning his professional career, and he built that career in sales. He learned prospecting, customer needs analysis, objection handling, negotiation, closing and follow-up firsthand. The experience left him with a simple conviction: businesses ultimately depend on the ability to communicate value.</p>
+        <p>As his career moved into sales leadership, the focus shifted to hiring, training, coaching and performance management. He favors hiring for character, measuring what matters and training continuously, and he is skeptical of the reflex to fix every slow month with more leads, a point he develops in his thinking on <a href="building-stronger-sales-teams.html">building stronger sales teams</a>. Readers with sales questions can also find <a href="https://www.quora.com/profile/Garrett-ORourke-3" target="_blank" rel="noopener">his Quora profile</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Operations</p>
+        <h2>Owning and Operating Call Centers</h2>
+        <p>Garrett has owned and operated call centers, an experience that put him at the intersection of sales, people, technology and economics. Running those operations meant recruiting and training representatives, managing lead distribution, monitoring calls, tracking conversion and controlling operating costs, all at high volume.</p>
+        <p>He considers it one of the most instructive environments in business, because scale makes every weakness visible. His views on culture, turnover, accountability without micromanagement and the economics behind every call are the subject of <a href="call-centers-taught-business.html">what call-center ownership taught him</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Investing</p>
+        <h2>An Owner's Approach to Stocks and Real Estate</h2>
+        <p>Operating businesses shaped how O'Rourke invests. He invests primarily in stocks and real estate and tries to evaluate both like an owner rather than a market participant: understanding the business behind a ticker, separating price from value and weighing potential loss alongside potential return.</p>
+        <p>In real estate, he starts with purchase price, financing, carrying costs and cash flow before considering appreciation, and he believes the willingness to walk away is one of an investor's strongest advantages. That method is laid out in <a href="evaluating-real-estate-investments.html">his approach to evaluating property deals</a>. These are personal views, not financial advice.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Beyond Business</p>
+        <h2>Miami Beach, Travel and Animal Welfare</h2>
+        <p>Miami Beach is home base for Garrett O'Rourke, and he stays closely connected to the broader South Florida business environment. Travel is one of his favorite ways to gain perspective on cities, architecture, food and the different ways people do business.</p>
+        <p>He also cares about animal welfare, particularly responsible pet ownership, adoption and the work of local shelters and rescue organizations. Readers can follow along on <a href="https://www.instagram.com/garrettorourke01/" target="_blank" rel="noopener">Garrett’s Instagram</a> and <a href="https://www.youtube.com/@garrettorourke01" target="_blank" rel="noopener">his YouTube channel</a>.</p>
+      </div>
+
+    </div>
+
+    <aside class="sidebar-facts">
+      <div class="sb-box">
+        <div class="sb-title">Quick Facts</div>
+        <div class="fr"><span class="fl">Name</span><span class="fv">Garrett O'Rourke</span></div>
+        <div class="fr"><span class="fl">Based in</span><span class="fv">Miami Beach, FL</span></div>
+        <div class="fr"><span class="fl">Role</span><span class="fv">President, Commercial Development Group</span></div>
+        <div class="fr"><span class="fl">Background</span><span class="fv">Sales &amp; call-center operations</span></div>
+        <div class="fr"><span class="fl">Investing</span><span class="fv">Stocks &amp; real estate</span></div>
+        <div class="fr"><span class="fl">Education</span><span class="fv">Attended University of Cincinnati</span></div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ══ SOCIAL + PRESS ACCORDION ══════════════════════════════════ -->
+<div class="acc-section" style="background:var(--off)">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'s-about')">Follow Garrett on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="s-about"><div id="sml-soc-about" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'n-about')">Garrett in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="n-about"><div id="sml-news-about" class="social-media-list"></div></div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 Garrett O'Rourke. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
